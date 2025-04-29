@@ -10,10 +10,10 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onStartup"
-  ],
   "main": "./extension.js",
+  "activationEvents": [
+  "onCommand:folderizes.Folderizes"
+],
   "contributes": {
     "commands": [{
       "command": "folderizes.Folderizes",
