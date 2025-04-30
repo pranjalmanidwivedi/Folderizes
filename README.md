@@ -1,24 +1,78 @@
-Streamline Your Web Development Workflow with Auto-Generated Folders and Express.js Setup
+# 🚀 Folderizes - Full Stack Project Scaffolder for VS Code
 
-This extension jumpstarts your web development projects by automatically creating essential folders and providing a basic Express.js server structure within your workspace.
+**Folderizes** is a powerful Visual Studio Code extension that automates the creation of a complete full-stack project structure — including a React + Vite client and an Express.js backend — with just one command.
 
-Key Features:
+---
 
-Effortless Folder Creation:
-Instantly generate core project folders like config, controllers, models, public, routes, utils, and views.
-Customize the folder structure to match your preferences. (Future functionality)
-Organized Public Directory:
-Create subfolders like images, javascripts, and stylesheets within the public directory for a clean separation of concerns.
-Express.js Head Start:
-A basic app.js file is generated with the Express.js framework included, ready for you to build upon.
-Focus on writing your application logic without setting up boilerplate code. (Future functionality - Allow customization of Express.js setup)
-Benefits:
+## ✨ Features
 
-Save Time: Skip manual folder creation and focus on coding from the get-go.
-Improved Project Organization: Maintain a consistent and well-structured project layout.
-Faster Development Setup: Hit the ground running with a pre-configured Express.js server.
-Ideal for:
+### 🔧 Frontend (React + Vite)
+- Automatically runs: `npm create vite@latest client -- --template react`
+- Installs Vite and React dependencies
+- Creates useful folders under `client/src`:
+  - `components/`, `hooks/`, `contexts/`, `lib/`, `pages/`
+- Replaces the default `App.jsx` content with:
+  ```jsx
+  <h1>Folderizes created folder successfully</h1>
+Clears default styling in App.css and index.css
 
-Web developers of all experience levels who want to streamline their workflow.
-Developers using Express.js for building web applications.
-Get started on your next web project with ease! Install this extension today.
+⚙️ Backend (Express.js)
+Creates a server folder with:
+
+controllers/, db/, middlewares/, models/, routes/, services/
+
+Installs Express and sets up a basic app.js with a working server
+
+📁 client/
+│   └── src/
+│       ├── components/
+│       ├── contexts/
+│       ├── hooks/
+│       ├── lib/
+│       ├── pages/
+│       ├── App.jsx         ← Modified
+│       ├── App.css         ← Emptied
+│       └── index.css       ← Emptied
+│
+📁 server/
+│   ├── controllers/
+│   ├── db/
+│   ├── middlewares/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   └── app.js              ← Express starter server
+🛠️ How to Use
+Open your workspace folder in VS Code.
+
+Press Ctrl+Shift+P (or Cmd+Shift+P on Mac).
+
+Search for and run: Folderizes: Run Folderizes Setup
+
+Watch your client/ and server/ folders come to life!
+
+📥 Installation
+You can install Folderizes directly from the Visual Studio Code Marketplace.
+
+🧪 Version
+Current Version: 0.0.2
+See CHANGELOG.md for detailed changes.
+
+💡 Future Plans
+Support for TypeScript templates
+
+Optional Tailwind or Bootstrap setup
+
+MongoDB integration for backend
+
+Custom project templates via prompts
+
+👨‍💻 Author
+Created by Pranjal Mani Dwivedi
+Contributions & feedback welcome!
+
+📄 License
+MIT License
+
+
+Let me know if you need anything else, including a shorter version for the Marketplace!
